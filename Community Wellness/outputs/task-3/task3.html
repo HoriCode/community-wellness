@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple daily wellness checklist and educational guide to healthy habits." />
+    <title>Community Wellness Habits Guide</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <div class="brand">
+            <span class="brand-mark" aria-hidden="true">✦</span>
+            Community Wellness
+          </div>
+          <a href="#checklist" class="nav-link">Daily Checklist</a>
+        </nav>
+
+        <div class="hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">Healthy habits for everyday life</p>
+            <h1>Build a routine that supports your energy, focus, and well-being.</h1>
+            <p class="lead">
+              Small daily choices can make a big difference. Start with simple actions that help your mind,
+              body, and community feel stronger and more balanced.
+            </p>
+            <div class="hero-actions">
+              <a href="#checklist" class="primary-btn">Start checklist</a>
+              <a href="#tips" class="secondary-btn">Learn more</a>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <p class="panel-label">Healthy rhythm</p>
+            <ul>
+              <li>Drink water throughout the day</li>
+              <li>Make time for movement that feels comfortable</li>
+              <li>Build a relaxing wind-down routine</li>
+              <li>Pause for a moment of calm</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="checklist" class="checklist-section">
+          <div class="section-heading">
+            <p class="eyebrow dark">Today's wellness checklist</p>
+            <h2>Track your healthy habits</h2>
+          </div>
+
+          <div class="checklist-card">
+            <div class="progress-header">
+              <div>
+                <p class="panel-label">Progress</p>
+                <p id="progress-text" class="progress-text" aria-live="polite">0 of 4 habits complete</p>
+              </div>
+              <button id="reset-button" class="reset-btn" type="button">Reset</button>
+            </div>
+
+            <div
+              id="progress-track"
+              class="progress-track"
+              role="progressbar"
+              aria-label="Daily wellness habits completed"
+              aria-valuemin="0"
+              aria-valuemax="4"
+              aria-valuenow="0"
+            >
+              <div id="progress-fill" class="progress-fill"></div>
+            </div>
+
+            <fieldset class="habit-list">
+              <legend class="visually-hidden">Today's healthy habits</legend>
+              <label class="habit-item">
+                <input type="checkbox" />
+                <span>Drink water regularly throughout the day</span>
+              </label>
+              <label class="habit-item">
+                <input type="checkbox" />
+                <span>Make time for movement that feels comfortable</span>
+              </label>
+              <label class="habit-item">
+                <input type="checkbox" />
+                <span>Make space for a relaxing wind-down</span>
+              </label>
+              <label class="habit-item">
+                <input type="checkbox" />
+                <span>Take a pause to rest and reset</span>
+              </label>
+            </fieldset>
+          </div>
+        </section>
+
+        <section id="tips" class="tips-section">
+          <div class="section-heading">
+            <p class="eyebrow dark">Why it matters</p>
+            <h2>Healthy habits that support daily life</h2>
+          </div>
+
+          <div class="tip-grid">
+            <article class="tip-card">
+              <div class="icon" aria-hidden="true">☾</div>
+              <h3>Sleep</h3>
+              <p>A regular wind-down routine and a comfortable sleep environment can support restful sleep and everyday well-being.</p>
+            </article>
+            <article class="tip-card">
+              <div class="icon" aria-hidden="true">◌</div>
+              <h3>Hydration</h3>
+              <p>Keep water nearby and sip regularly as part of your day. Individual hydration needs can vary.</p>
+            </article>
+            <article class="tip-card">
+              <div class="icon" aria-hidden="true">↗</div>
+              <h3>Movement</h3>
+              <p>Walking, stretching, dancing, or other enjoyable movement can fit into daily routines in different ways.</p>
+            </article>
+            <article class="tip-card">
+              <div class="icon" aria-hidden="true">〰</div>
+              <h3>Stress management</h3>
+              <p>Taking a brief pause, spending time on a calming activity, or connecting with others may help make busy days feel more manageable.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="routine-section">
+          <div class="section-heading">
+            <p class="eyebrow dark">Simple routine</p>
+            <h2>A balanced day can start with small wins</h2>
+          </div>
+
+          <div class="routine-list">
+            <div class="routine-item">
+              <span class="time">Morning</span>
+              <p>Hydrate, stretch, and eat a nourishing breakfast.</p>
+            </div>
+            <div class="routine-item">
+              <span class="time">Midday</span>
+              <p>Take short movement breaks and eat colorful, balanced meals.</p>
+            </div>
+            <div class="routine-item">
+              <span class="time">Evening</span>
+              <p>Unplug, rest your eyes, and prepare for a consistent bedtime.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>This guide provides general educational information only. It is not medical advice and does not replace guidance from a qualified health professional.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

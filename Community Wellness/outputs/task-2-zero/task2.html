@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Wellness Habits Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <div class="brand">
+            <span class="brand-mark">✦</span>
+            Community Wellness
+          </div>
+          <a href="#checklist" class="nav-link">Daily Checklist</a>
+        </nav>
+
+        <div class="hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">Healthy habits for everyday life</p>
+            <h1>Build a routine that supports your energy, focus, and well-being.</h1>
+            <p class="lead">
+              Small daily choices can make a big difference. Start with simple actions that help your mind,
+              body, and community feel stronger and more balanced.
+            </p>
+            <div class="hero-actions">
+              <a href="#checklist" class="primary-btn">Start checklist</a>
+              <a href="#tips" class="secondary-btn">Learn more</a>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <p class="panel-label">Healthy rhythm</p>
+            <ul>
+              <li>Drink water throughout the day</li>
+              <li>Move your body for at least 20 minutes</li>
+              <li>Sleep 7–9 hours each night</li>
+              <li>Take short breaks to reset your mind</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="checklist" class="checklist-section">
+          <div class="section-heading">
+            <p class="eyebrow dark">Today's wellness checklist</p>
+            <h2>Track your healthy habits</h2>
+          </div>
+
+          <div class="checklist-card">
+            <div class="progress-header">
+              <div>
+                <p class="panel-label">Progress</p>
+                <strong id="progress-text">0 of 5 habits complete</strong>
+              </div>
+              <button id="reset-button" class="reset-btn" type="button">Reset</button>
+            </div>
+
+            <div class="progress-track" aria-label="Habit completion progress">
+              <div id="progress-fill" class="progress-fill"></div>
+            </div>
+
+            <div class="habit-list">
+              <label class="habit-item">
+                <input type="checkbox" />
+                <span>Drink 6–8 glasses of water</span>
+              </label>
+              <label class="habit-item">
+                <input type="checkbox" />
+                <span>Eat a balanced breakfast</span>
+              </label>
+              <label class="habit-item">
+                <input type="checkbox" />
+                <span>Move your body for 20+ minutes</span>
+              </label>
+              <label class="habit-item">
+                <input type="checkbox" />
+                <span>Take a short break from screens</span>
+              </label>
+              <label class="habit-item">
+                <input type="checkbox" />
+                <span>Get to bed at a consistent time</span>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section id="tips" class="tips-section">
+          <div class="section-heading">
+            <p class="eyebrow dark">Why it matters</p>
+            <h2>Healthy habits that support daily life</h2>
+          </div>
+
+          <div class="tip-grid">
+            <article class="tip-card">
+              <div class="icon">🥗</div>
+              <h3>Nutrition</h3>
+              <p>Choose fruits, vegetables, whole grains, and protein-rich meals to support energy and concentration.</p>
+            </article>
+            <article class="tip-card">
+              <div class="icon">🏃</div>
+              <h3>Movement</h3>
+              <p>Regular walking, stretching, or exercise helps strengthen the body and improve mood throughout the day.</p>
+            </article>
+            <article class="tip-card">
+              <div class="icon">😴</div>
+              <h3>Rest</h3>
+              <p>Sufficient sleep helps your brain recharge, supports memory, and improves emotional balance.</p>
+            </article>
+            <article class="tip-card">
+              <div class="icon">🧠</div>
+              <h3>Mindfulness</h3>
+              <p>Taking a few quiet moments to breathe and reflect can reduce stress and improve focus.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="routine-section">
+          <div class="section-heading">
+            <p class="eyebrow dark">Simple routine</p>
+            <h2>A balanced day can start with small wins</h2>
+          </div>
+
+          <div class="routine-list">
+            <div class="routine-item">
+              <span class="time">Morning</span>
+              <p>Hydrate, stretch, and eat a nourishing breakfast.</p>
+            </div>
+            <div class="routine-item">
+              <span class="time">Midday</span>
+              <p>Take short movement breaks and eat colorful, balanced meals.</p>
+            </div>
+            <div class="routine-item">
+              <span class="time">Evening</span>
+              <p>Unplug, rest your eyes, and prepare for a consistent bedtime.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>General wellness guidance for education and daily routine planning only.</p>
+        <p>Not a substitute for medical advice from a qualified health professional.</p>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
